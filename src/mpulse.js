@@ -1243,14 +1243,7 @@
     //
     // Export to the appropriate location
     //
-    if (typeof define === "function" && define.amd) {
-        //
-        // AMD / RequireJS
-        //
-        define([], function() {
-            return mPulse;
-        });
-    } else if (typeof module !== "undefined" && module.exports) {
+    if (typeof module !== "undefined" && module.exports) {
         //
         // Node.js
         //
